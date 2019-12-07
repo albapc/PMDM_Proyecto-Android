@@ -30,7 +30,7 @@ class Reto3Activity : AppCompatActivity() {
 
 
         bSuma.setOnClickListener {
-           resultado = hacerCalculo(it)
+            resultado = hacerCalculo(it)
 
         }
 
@@ -40,34 +40,34 @@ class Reto3Activity : AppCompatActivity() {
         }
 
         bMultiplicacion.setOnClickListener {
-            resultado =  hacerCalculo(it)
+            resultado = hacerCalculo(it)
 
         }
 
         bDivision.setOnClickListener {
-            resultado =  hacerCalculo(it)
+            resultado = hacerCalculo(it)
 
         }
 
         bIgual.setOnClickListener {
 
-            resultado =  hacerCalculo(it)
+            resultado = hacerCalculo(it)
 
             Handler().postDelayed(
                 {
                     val alertDialog = AlertDialog.Builder(this).create()
                     alertDialog.setTitle("Enhorabuena!")
                     alertDialog.setMessage("Reto 3 superado! Quieres hacer otra operacion?")
-                    alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "Si") {
-                            dialog, _ -> dialog.dismiss()
+                    alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "Si") { dialog, _ ->
+                        dialog.dismiss()
                     }
 
-                    alertDialog.setButton(AlertDialog.BUTTON_NEGATIVE, "No") {
-                        dialog, _ ->  dialog.run {
+                    alertDialog.setButton(AlertDialog.BUTTON_NEGATIVE, "No") { dialog, _ ->
+                        dialog.run {
                             data.putExtra("resultado", resultado)
                             setResult(Activity.RESULT_OK, data)
                             finish()
-                    }
+                        }
                     }
                     alertDialog.show()
                 },
@@ -118,12 +118,10 @@ class Reto3Activity : AppCompatActivity() {
                     resta -> {
                         resultado = num1 - num2
                     }
-                    multiplicacion ->
-                    {
+                    multiplicacion -> {
                         resultado = num1 * num2
                     }
-                    division ->
-                    {
+                    division -> {
                         resultado = num1 / num2
                     }
                 }

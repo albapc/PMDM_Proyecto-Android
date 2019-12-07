@@ -12,32 +12,29 @@ import org.jetbrains.anko.toast
 class Reto2Activity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        //crea la activity
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_reto2)
 
+        //variable que almacenara el intent que usaremos
         val data = Intent()
 
-        val imageBitmap = intent.extras!!.get("image") as Bitmap //con !! se le dice que es seguro que no es nulo
+        //variable de tipo bitmap que almacenara el intent con la etiqueta image
+        val imageBitmap =
+            intent.extras!!.get("image") as Bitmap //con !! se le dice que es seguro que no es nulo
+
+        //almacena dicha imagen en un elemento de tipo imageView de la interfaz, para que podamos verla
         imageView.setImageBitmap(imageBitmap)
+
+        //mensaje generado
         toast("Lo conseguiste! Reto 2 superado")
 
-        /*
-
-        val extras = intent.extras
-        if (extras != null) {
-            val imageBitmap = extras.get("image") as Bitmap //con !! se le dice que es seguro que no es nulo
-            if (imageBitmap != null) {
-                imageView.setImageBitmap(imageBitmap)
-            }
-        }
-
-         */
-
-        bVolver.setOnClickListener {view ->
-
-
-                setResult(Activity.RESULT_OK, data)
-                finish()
-            }
+        //accion realizada al pulsar el boton
+        bVolver.setOnClickListener { view ->
+            //devuelve un resultado positivo y almacena los datos
+            setResult(Activity.RESULT_OK, data)
+            //cierra esta activity
+            finish()
         }
     }
+}
