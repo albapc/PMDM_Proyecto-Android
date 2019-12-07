@@ -56,7 +56,7 @@ class Reto3Activity : AppCompatActivity() {
             Handler().postDelayed(
                 {
                     val alertDialog = AlertDialog.Builder(this).create()
-                    alertDialog.setTitle("Nota")
+                    alertDialog.setTitle("Enhorabuena!")
                     alertDialog.setMessage("Reto 3 superado! Quieres hacer otra operacion?")
                     alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "Si") {
                             dialog, _ -> dialog.dismiss()
@@ -64,7 +64,7 @@ class Reto3Activity : AppCompatActivity() {
 
                     alertDialog.setButton(AlertDialog.BUTTON_NEGATIVE, "No") {
                         dialog, _ ->  dialog.run {
-                            data.putExtra("resultado",resultado)
+                            data.putExtra("resultado", resultado)
                             setResult(Activity.RESULT_OK, data)
                             finish()
                     }

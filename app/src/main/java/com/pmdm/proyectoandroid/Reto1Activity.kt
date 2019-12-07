@@ -53,7 +53,7 @@ class Reto1Activity : AppCompatActivity() {
             questions[0] ->
                 if (tRespuesta.text.toString() == correctAnswer[0]) {
                     toast("Correcto! Ruta 1 superada")
-                    data.putExtra("correcto",true)
+                    data.putExtra("correcto", true)
                     setResult(Activity.RESULT_OK, data)
                     finish()
                 } else {
@@ -62,7 +62,7 @@ class Reto1Activity : AppCompatActivity() {
             questions[1] ->
                 if (tRespuesta.text.toString() == correctAnswer[1]) {
                     toast("Correcto! Ruta 1 superada")
-                    data.putExtra("correcto",true)
+                    data.putExtra("correcto", true)
                     setResult(Activity.RESULT_OK, data)
                     finish()
                 } else {
@@ -72,7 +72,7 @@ class Reto1Activity : AppCompatActivity() {
             questions[2] ->
                 if (tRespuesta.text.toString().equals(correctAnswer[2], ignoreCase = true)) {
                     toast("Correcto! Ruta 1 superada")
-                    data.putExtra("correcto",true)
+                    data.putExtra("correcto", true)
                     setResult(Activity.RESULT_OK, data)
                     finish()
                 } else {
@@ -94,5 +94,4 @@ class Reto1Activity : AppCompatActivity() {
                 browse("https://es.wikipedia.org/wiki/Museo_del_Prado")
         }
     }
-
 }
