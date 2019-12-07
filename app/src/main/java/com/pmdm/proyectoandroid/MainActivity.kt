@@ -13,6 +13,7 @@ import android.util.Log
 import kotlinx.android.synthetic.main.activity_main.*
 import org.jetbrains.anko.toast
 import android.graphics.Bitmap
+import org.jetbrains.anko.longToast
 
 const val QUESTION_REQUEST = 1
 const val CAMERA_REQUEST = 2
@@ -82,7 +83,7 @@ class MainActivity : AppCompatActivity() {
         val operationIntent = Intent(this, Reto3Activity::class.java)
 
 
-        startActivity(operationIntent)
+        startActivityForResult(operationIntent, OPERATION_REQUEST)
     }
 
     fun mostrarReto4() {
@@ -127,10 +128,10 @@ class MainActivity : AppCompatActivity() {
                 when(resultCode) {
                     Activity.RESULT_OK ->
                         if(data != null) {
-
+                            longToast("Reto 3 superado! El resultado es " + data.getIntExtra("resultado", 0).toString())
                             reto3.isEnabled = false
-                            reto4.setImageResource(R.drawable.colorstar)
-                            reto1.setBackgroundColor(Color.parseColor("#c3f0ca"))
+                            reto3.setImageResource(R.drawable.colorstar)
+                            reto3.setBackgroundColor(Color.parseColor("#c3f0ca"))
                         }
                 }
 
