@@ -1,0 +1,67 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.pmdm.proyectoandroid"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+8-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.CAMERA" />
+11-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:5:5-64
+11-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:5:22-62
+12
+13    <uses-feature
+13-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:6:5-7:34
+14        android:name="android.hardware.camera"
+14-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:6:19-57
+15        android:required="true" />
+15-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:7:9-32
+16
+17    <application
+17-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:9:5-26:19
+18        android:allowBackup="true"
+18-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:10:9-35
+19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+19-->[androidx.core:core:1.0.2] C:\Users\Alba\.gradle\caches\transforms-2\files-2.1\59634bf3360427ef7f7373ad7fa95cb2\core-1.0.2\AndroidManifest.xml:22:18-86
+20        android:debuggable="true"
+21        android:icon="@mipmap/ic_launcher"
+21-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:11:9-43
+22        android:label="@string/app_name"
+22-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:12:9-41
+23        android:roundIcon="@mipmap/ic_launcher_round"
+23-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:13:9-54
+24        android:supportsRtl="true"
+24-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:14:9-35
+25        android:testOnly="true"
+26        android:theme="@style/AppTheme" >
+26-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:15:9-40
+27        <activity android:name="com.pmdm.proyectoandroid.Reto3Activity" />
+27-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:16:9-60
+27-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:16:19-48
+28        <activity android:name="com.pmdm.proyectoandroid.Reto2Activity" />
+28-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:17:9-51
+28-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:17:19-48
+29        <activity android:name="com.pmdm.proyectoandroid.Reto1Activity" />
+29-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:18:9-51
+29-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:18:19-48
+30        <activity android:name="com.pmdm.proyectoandroid.MainActivity" >
+30-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:19:9-25:20
+30-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:19:19-47
+31            <intent-filter>
+31-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:20:13-24:29
+32                <action android:name="android.intent.action.MAIN" />
+32-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:21:17-69
+32-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:21:25-66
+33
+34                <category android:name="android.intent.category.LAUNCHER" />
+34-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:23:17-77
+34-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:23:27-74
+35            </intent-filter>
+36        </activity>
+37    </application>
+38
+39</manifest>

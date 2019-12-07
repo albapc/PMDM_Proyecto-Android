@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">ProyectoAndroid</string>
+    <string name="instrucciones">Este juego consiste en superar 4 retos. Si los superas, ganas!</string>
+    <string name="yyy">yy</string>
+    <string name="pixelheart">pixelheart</string>
+    <string name="tPregunta">¿En qué año nació Benjamin Franklin?</string>
+    <string name="tRespuesta">Respuesta</string>
+    <string name="bEnviar">Enviar</string>
+    <string name="bAyuda">¿Necesitas ayuda?</string>
+    <string name="imageView">imageView</string>
+    <string name="bVolver">Volver</string>
+    <string name="tReto3">Este reto consiste en realizar una operación matemática (suma, resta, multiplicación o división). Lo que quieras!</string>
+    <string name="tNum1">Introduce un número...</string>
+    <string name="tNum2">Introduce un número...</string>
+    <string name="tvNum1">Numero 1:</string>
+    <string name="tvNum2">Numero 2:</string>
+    <string name="maths">maths</string>
+    <string name="bSuma">Suma</string>
+    <string name="bResta">Resta</string>
+    <string name="bmultiplicacion">Multiplicacion</string>
+    <string name="bDivision">Division</string>
+    <string name="bIgual">Igual</string>
+</resources>
