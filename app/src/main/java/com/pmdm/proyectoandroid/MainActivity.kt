@@ -19,6 +19,7 @@ const val QUESTION_REQUEST = 1
 const val CAMERA_REQUEST = 2
 const val REQUEST_IMAGE_CAPTURE = 3
 const val OPERATION_REQUEST = 4
+const val LOCATION_REQUEST = 5
 
 class MainActivity : AppCompatActivity() {
 
@@ -32,11 +33,6 @@ class MainActivity : AppCompatActivity() {
         reto2.setBackgroundColor(Color.parseColor("#ff8ba7"))
         reto3.setBackgroundColor(Color.parseColor("#ff8ba7"))
         reto4.setBackgroundColor(Color.parseColor("#ff8ba7"))
-
-
-        if (checkSelfPermission(Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
-            requestPermissions(arrayOf(Manifest.permission.CAMERA), CAMERA_REQUEST)
-        }
 
         reto1.setOnClickListener {
             mostrarReto1()
@@ -60,10 +56,13 @@ class MainActivity : AppCompatActivity() {
         val questionIntent = Intent(this, Reto1Activity::class.java)
 
         startActivityForResult(questionIntent, QUESTION_REQUEST)
-
     }
 
     fun mostrarReto2() {
+        if (checkSelfPermission(Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
+            requestPermissions(arrayOf(Manifest.permission.CAMERA), CAMERA_REQUEST)
+        }
+
         val cameraIntent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
         val alertDialog = AlertDialog.Builder(this).create()
 
@@ -82,16 +81,16 @@ class MainActivity : AppCompatActivity() {
     fun mostrarReto3() {
         val operationIntent = Intent(this, Reto3Activity::class.java)
 
-
         startActivityForResult(operationIntent, OPERATION_REQUEST)
     }
 
     fun mostrarReto4() {
-        val miIntent = Intent(this, Reto1Activity::class.java)
+        if(checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            requestPermissions(arrayOf(Manifest.permission.ACCESS_FINE_LOCATION), LOCATION_REQUEST)
+        }
+        val miIntent = Intent(this, Reto4Activity::class.java)
 
-        //miIntent.putExtra("color", "rojo")
-
-        startActivity(miIntent)
+        startActivityForResult(miIntent, LOCATION_REQUEST)
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
@@ -133,8 +132,9 @@ class MainActivity : AppCompatActivity() {
                             reto3.setImageResource(R.drawable.colorstar)
                             reto3.setBackgroundColor(Color.parseColor("#c3f0ca"))
                         }
+                    Activity.RESULT_CANCELED ->
+                        Log.d("miApp", "Cancelado")
                 }
-
         }
     }
 
@@ -144,12 +144,23 @@ class MainActivity : AppCompatActivity() {
         grantResults: IntArray
     ) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
-        if (requestCode == CAMERA_REQUEST) {
-            if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                toast("camera permission granted")
-            } else {
-                toast("camera permission denied")
+        when(requestCode) {
+            CAMERA_REQUEST ->
+            {
+                when(grantResults[0]) {
+                    PackageManager.PERMISSION_GRANTED ->
+                        toast("camera permission granted")
+                    PackageManager.PERMISSION_DENIED ->
+                        toast("camera permission denied. The app needs permissions to run.")
+                }
             }
+            LOCATION_REQUEST ->
+                when(grantResults[0]) {
+                    PackageManager.PERMISSION_GRANTED ->
+                        toast("location permission granted")
+                    PackageManager.PERMISSION_DENIED ->
+                        toast("location permission denied. The app needs permissions to run.")
+                }
         }
     }
 }

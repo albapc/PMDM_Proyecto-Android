@@ -21,47 +21,51 @@
 15        android:required="true" />
 15-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:7:9-32
 16
-17    <application
-17-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:9:5-26:19
-18        android:allowBackup="true"
-18-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:10:9-35
-19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-19-->[androidx.core:core:1.0.2] C:\Users\Alba\.gradle\caches\transforms-2\files-2.1\59634bf3360427ef7f7373ad7fa95cb2\core-1.0.2\AndroidManifest.xml:22:18-86
-20        android:debuggable="true"
-21        android:icon="@mipmap/ic_launcher"
-21-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:11:9-43
-22        android:label="@string/app_name"
-22-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:12:9-41
-23        android:roundIcon="@mipmap/ic_launcher_round"
-23-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:13:9-54
-24        android:supportsRtl="true"
-24-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:14:9-35
-25        android:testOnly="true"
-26        android:theme="@style/AppTheme" >
-26-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:15:9-40
-27        <activity android:name="com.pmdm.proyectoandroid.Reto3Activity" />
-27-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:16:9-60
-27-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:16:19-48
-28        <activity android:name="com.pmdm.proyectoandroid.Reto2Activity" />
-28-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:17:9-51
-28-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:17:19-48
-29        <activity android:name="com.pmdm.proyectoandroid.Reto1Activity" />
-29-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:18:9-51
+17    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+17-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:8:5-79
+17-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:8:22-76
+18
+19    <application
+19-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:11:5-28:19
+20        android:allowBackup="true"
+20-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:12:9-35
+21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+21-->[androidx.core:core:1.0.2] C:\Users\Alba\.gradle\caches\transforms-2\files-2.1\59634bf3360427ef7f7373ad7fa95cb2\core-1.0.2\AndroidManifest.xml:22:18-86
+22        android:debuggable="true"
+23        android:icon="@mipmap/ic_launcher"
+23-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:13:9-43
+24        android:label="@string/app_name"
+24-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:14:9-41
+25        android:roundIcon="@mipmap/ic_launcher_round"
+25-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:15:9-54
+26        android:supportsRtl="true"
+26-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:16:9-35
+27        android:testOnly="true"
+28        android:theme="@style/AppTheme" >
+28-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:17:9-40
+29        <activity android:name="com.pmdm.proyectoandroid.Reto3Activity" />
+29-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:18:9-60
 29-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:18:19-48
-30        <activity android:name="com.pmdm.proyectoandroid.MainActivity" >
-30-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:19:9-25:20
-30-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:19:19-47
-31            <intent-filter>
-31-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:20:13-24:29
-32                <action android:name="android.intent.action.MAIN" />
-32-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:21:17-69
-32-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:21:25-66
-33
-34                <category android:name="android.intent.category.LAUNCHER" />
-34-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:23:17-77
-34-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:23:27-74
-35            </intent-filter>
-36        </activity>
-37    </application>
-38
-39</manifest>
+30        <activity android:name="com.pmdm.proyectoandroid.Reto2Activity" />
+30-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:19:9-51
+30-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:19:19-48
+31        <activity android:name="com.pmdm.proyectoandroid.Reto1Activity" />
+31-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:20:9-51
+31-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:20:19-48
+32        <activity android:name="com.pmdm.proyectoandroid.MainActivity" >
+32-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:21:9-27:20
+32-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:21:19-47
+33            <intent-filter>
+33-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:22:13-26:29
+34                <action android:name="android.intent.action.MAIN" />
+34-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:23:17-69
+34-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:23:25-66
+35
+36                <category android:name="android.intent.category.LAUNCHER" />
+36-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:25:17-77
+36-->G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:25:27-74
+37            </intent-filter>
+38        </activity>
+39    </application>
+40
+41</manifest>
