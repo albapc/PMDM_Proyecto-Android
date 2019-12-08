@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:2:1-30:12
+ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:2:1-38:12
 MERGED from [org.jetbrains.anko:anko-design:0.10.8] C:\Users\Alba\.gradle\caches\transforms-2\files-2.1\08a64119f626e870129069bf6efea1c0\jetified-anko-design-0.10.8\AndroidManifest.xml:2:1-13:12
 MERGED from [org.jetbrains.anko:design-base:0.10.8] C:\Users\Alba\.gradle\caches\transforms-2\files-2.1\e621b17e89a04ddf6de54b95cd08e6de\jetified-design-base-0.10.8\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\Alba\.gradle\caches\transforms-2\files-2.1\b3c970aca904ae2d480d925a6ea32492\material-1.0.0\AndroidManifest.xml:17:1-24:12
@@ -40,39 +40,47 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Alba\.gradle\cac
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Alba\.gradle\caches\transforms-2\files-2.1\004fb91108e1b1927119709e2ff43030\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Alba\.gradle\caches\transforms-2\files-2.1\3a3ed459510bf208b94d56b861c80196\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Alba\.gradle\caches\transforms-2\files-2.1\ab93a8dbadb16e1d4464b7fe897665b9\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
-INJECTED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:2:1-38:12
 	package
 		ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:3:5-39
 		INJECTED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml
 		INJECTED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml
-		ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:2:1-30:12
+		ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:2:1-38:12
 		INJECTED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml
-		ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:2:1-30:12
+		ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:2:1-38:12
 		INJECTED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.CAMERA
-ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:5:5-64
+ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:5:5-65
 	android:name
 		ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:5:22-62
 uses-feature#android.hardware.camera
-ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:6:5-7:34
+ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:7:5-9:35
 	android:required
-		ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:7:9-32
+		ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:9:9-32
 	android:name
-		ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:6:19-57
-uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:8:5-79
+		ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:8:9-47
+uses-feature#android.hardware.sensor.proximity
+ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:10:5-12:35
+	android:required
+		ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:12:9-32
 	android:name
-		ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:8:22-76
+		ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:11:9-57
+uses-feature#android.hardware.sensor.gyroscope
+ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:13:5-15:35
+	android:required
+		ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:15:9-32
+	android:name
+		ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:14:9-57
 application
-ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:11:5-28:19
+ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:17:5-36:19
 MERGED from [org.jetbrains.anko:anko-design:0.10.8] C:\Users\Alba\.gradle\caches\transforms-2\files-2.1\08a64119f626e870129069bf6efea1c0\jetified-anko-design-0.10.8\AndroidManifest.xml:11:5-20
 MERGED from [org.jetbrains.anko:anko-design:0.10.8] C:\Users\Alba\.gradle\caches\transforms-2\files-2.1\08a64119f626e870129069bf6efea1c0\jetified-anko-design-0.10.8\AndroidManifest.xml:11:5-20
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\Alba\.gradle\caches\transforms-2\files-2.1\b3c970aca904ae2d480d925a6ea32492\material-1.0.0\AndroidManifest.xml:22:5-20
@@ -88,43 +96,49 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Al
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.0.2] C:\Users\Alba\.gradle\caches\transforms-2\files-2.1\59634bf3360427ef7f7373ad7fa95cb2\core-1.0.2\AndroidManifest.xml:22:18-86
 	android:supportsRtl
-		ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:16:9-35
+		ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:22:9-35
 	android:label
-		ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:14:9-41
+		ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:20:9-41
 	android:roundIcon
-		ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:15:9-54
+		ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:21:9-54
 	android:icon
-		ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:13:9-43
+		ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:19:9-43
 	android:allowBackup
-		ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:12:9-35
+		ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:18:9-35
 	android:theme
-		ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:17:9-40
+		ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:23:9-40
+activity#com.pmdm.proyectoandroid.Reto4Activity
+ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:24:9-25:51
+	android:screenOrientation
+		ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:25:13-49
+	android:name
+		ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:24:19-48
 activity#com.pmdm.proyectoandroid.Reto3Activity
-ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:18:9-60
+ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:26:9-51
 	android:name
-		ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:18:19-48
+		ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:26:19-48
 activity#com.pmdm.proyectoandroid.Reto2Activity
-ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:19:9-51
+ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:27:9-51
 	android:name
-		ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:19:19-48
+		ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:27:19-48
 activity#com.pmdm.proyectoandroid.Reto1Activity
-ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:20:9-51
+ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:28:9-51
 	android:name
-		ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:20:19-48
+		ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:28:19-48
 activity#com.pmdm.proyectoandroid.MainActivity
-ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:21:9-27:20
+ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:29:9-35:20
 	android:name
-		ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:21:19-47
+		ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:29:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:22:13-26:29
+ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:30:13-34:29
 action#android.intent.action.MAIN
-ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:23:17-69
+ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:31:17-69
 	android:name
-		ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:23:25-66
+		ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:31:25-66
 category#android.intent.category.LAUNCHER
-ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:25:17-77
+ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:33:17-77
 	android:name
-		ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:25:27-74
+		ADDED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml:33:27-74
 uses-sdk
 INJECTED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from G:\PMDM\AndroidStudioProjects\ProyectoAndroid\app\src\main\AndroidManifest.xml

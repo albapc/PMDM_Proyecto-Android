@@ -7,8 +7,12 @@
     <uses-feature
         android:name="android.hardware.camera"
         android:required="true" />
-
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-feature
+        android:name="android.hardware.sensor.proximity"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.sensor.gyroscope"
+        android:required="true" />
 
     <application
         android:allowBackup="true"
@@ -17,7 +21,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Reto4Activity"></activity>
+        <activity android:name=".Reto4Activity"
+            android:screenOrientation="portrait"/>
         <activity android:name=".Reto3Activity" />
         <activity android:name=".Reto2Activity" />
         <activity android:name=".Reto1Activity" />

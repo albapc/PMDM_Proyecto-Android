@@ -1302,6 +1302,7 @@ layout activity_main
 layout activity_reto1
 layout activity_reto2
 layout activity_reto3
+layout activity_reto4
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
 layout design_layout_snackbar
