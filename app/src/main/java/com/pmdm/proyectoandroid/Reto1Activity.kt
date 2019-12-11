@@ -28,7 +28,7 @@ class Reto1Activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_reto1)
 
-        //genera un numero aleatorio
+        //genera un numero aleatorio, este numero se ampliará o se reducirá conforme el número de preguntas que haya
         val r = (0..2).random()
 
         //se asigna ese numero aleatorio al indice del array y muestra ese valor en el texto
@@ -39,25 +39,32 @@ class Reto1Activity : AppCompatActivity() {
             validarPreguntas()
         }
 
+        //al pulsar el botón de "ayuda", se llama al metodo que abre el navegador con la página que indiquemos
         bAyuda.setOnClickListener {
             buscarAyuda()
         }
-
     }
 
     fun validarPreguntas() {
 
         val data = Intent()
 
+        //analiza la pregunta que se muestra
         when (tPregunta.text.toString()) {
+            //segun la posicion del array donde estuviera la pregunta...
             questions[0] ->
+                //si la respuesta introducida es igual a la respuesta correcta de esa pregunta...
                 if (tRespuesta.text.toString() == correctAnswer[0]) {
+                    //muestra el mensaje
                     toast("Correcto! Ruta 1 superada")
+                    //devuelve un valor al main
                     data.putExtra("correcto", true)
+                    //cambia el resultado del activity para que ejecute el onActivityResult
                     setResult(Activity.RESULT_OK, data)
+                    //cierra esta activity
                     finish()
-                } else {
-                    toast("Oooooh... No es correcto, vuelve a intentarlo")
+                } else { //de lo contrario...
+                    toast("Oooooh... No es correcto, vuelve a intentarlo") //muestra el siguiente mensaje
                 }
             questions[1] ->
                 if (tRespuesta.text.toString() == correctAnswer[1]) {
@@ -70,6 +77,8 @@ class Reto1Activity : AppCompatActivity() {
                 }
 
             questions[2] ->
+                //en este caso, al ser una respuesta no numérica, comparamos ambos strings, ignorando
+                //mayúsculas y minúsculas
                 if (tRespuesta.text.toString().equals(correctAnswer[2], ignoreCase = true)) {
                     toast("Correcto! Ruta 1 superada")
                     data.putExtra("correcto", true)
@@ -83,8 +92,10 @@ class Reto1Activity : AppCompatActivity() {
 
     fun buscarAyuda() {
 
+        //dependiendo de la pregunta mostrada...
         when (tPregunta.text.toString()) {
             questions[0] ->
+                //muestra un enlace u otro
                 browse("https://es.wikipedia.org/wiki/Benjamin_Franklin")
 
             questions[1] ->

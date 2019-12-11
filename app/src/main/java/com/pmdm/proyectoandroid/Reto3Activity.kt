@@ -13,6 +13,7 @@ import org.jetbrains.anko.toast
 
 class Reto3Activity : AppCompatActivity() {
 
+    //variables globales que vamos a utilizar en varias funciones
     private var suma = false
     private var resta = false
     private var multiplicacion = false
@@ -21,52 +22,53 @@ class Reto3Activity : AppCompatActivity() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        //crea la activity y la muestra
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_reto3)
 
+        //cambia el color del texto
         tReto3.setTextColor(Color.parseColor("#baabda"))
 
+        //variable de tipo intent
         val data = Intent()
 
 
+        //cada boton lleva asignada una acción, el resultado de esta se almacena en una variable
         bSuma.setOnClickListener {
             resultado = hacerCalculo(it)
-
         }
 
         bResta.setOnClickListener {
             resultado = hacerCalculo(it)
-
         }
 
         bMultiplicacion.setOnClickListener {
             resultado = hacerCalculo(it)
-
         }
 
         bDivision.setOnClickListener {
             resultado = hacerCalculo(it)
-
         }
 
         bIgual.setOnClickListener {
-
             resultado = hacerCalculo(it)
 
+            //espera unos segundos
             Handler().postDelayed(
                 {
+                    //crea el cuadro de dialogo
                     val alertDialog = AlertDialog.Builder(this).create()
                     alertDialog.setTitle("Enhorabuena!")
                     alertDialog.setMessage("Reto 3 superado! Quieres hacer otra operacion?")
                     alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "Si") { dialog, _ ->
-                        dialog.dismiss()
+                        dialog.dismiss() //si pulsamos si, cierra el cuadro
                     }
 
                     alertDialog.setButton(AlertDialog.BUTTON_NEGATIVE, "No") { dialog, _ ->
                         dialog.run {
                             data.putExtra("resultado", resultado)
                             setResult(Activity.RESULT_OK, data)
-                            finish()
+                            finish() //si pulsamos no, cierra la activity
                         }
                     }
                     alertDialog.show()
@@ -78,10 +80,11 @@ class Reto3Activity : AppCompatActivity() {
 
     private fun hacerCalculo(view: View): Int {
 
+        //variables obtenidas de las cajas de texto, las pasamos a int
         val num1 = Integer.parseInt(tNum1.text.toString())
         val num2 = Integer.parseInt(tNum2.text.toString())
 
-
+        //dependiendo de la id del botón pulsado (suma, resta, multiplicacion, division o igual)...
         when (view.id) {
             R.id.bSuma -> {
                 suma = true
@@ -125,10 +128,10 @@ class Reto3Activity : AppCompatActivity() {
                         resultado = num1 / num2
                     }
                 }
-                toast(Integer.toString(resultado))
+                toast(Integer.toString(resultado)) //muestra el resultado en un toast
             }
         }
-        return resultado
+        return resultado //devuelve el resultado
     }
 }
 
