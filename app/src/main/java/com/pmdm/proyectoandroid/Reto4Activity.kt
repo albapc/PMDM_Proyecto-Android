@@ -14,6 +14,8 @@ import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 
 
+//NOTA: ESTAS FUNCIONES SE PROBARON EN UN MÓVIL FÍSICO, SIN EMULADOR, EN EL CUAL FUNCIONA PERFECTAMENTE,
+//NO ES SEGURO QUE FUNCIONE EN UN EMULADOR, YA QUE ENTRAN EN USO LOS SENSORES DEL MÓVIL
 class Reto4Activity : AppCompatActivity() {
 
     //variables globales para utilizar los sensores y el intent
